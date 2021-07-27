@@ -1,0 +1,6 @@
+ctrl+alt+c:声明为final
+alt+shift+c:查看最近的改变
+ctrl+shift+enter:完成if、try-catch、return补全
+alt+up/down:跳到上一个方法或类处
+shift+alt+insert:进入列模式，再按shift+alt+insert:取消列模式
+ctrl+shift+u:大小写切换

@@ -1,0 +1,21 @@
+1.ctrl+p: 搜索文件
+2.ctrl+shift+p: 运行任何命令
+3.ctrl+shift+n: 打开新的窗口
+4.ctrl+shift+w: 关闭窗口
+5.ctrl+n：创建新的综合文件
+6.alt+shift+f: 格式化代码
+7.alt+up/down: 向上或向下移动代码
+8.shift+alt+up/down向上或向下复制代码
+9.ctrl+shift+k: 删除一行
+10.ctrl+/: 注释一行
+11.ctrl+f：查找
+12.ctrl+shift+f: 全局查找
+13.ctrl+h: 替换
+14.shift+alt+b:其它浏览器发开html文件
+15.alt+b:默认浏览器打开文件
+16.ctrl+o:打开文件
+17.ctrl+,ctrl+o:打开文件夹
+18.ctrl+,:搜索设置
+19.shift+alt+r:打开文件在磁盘中的位置
+20.alt+<-:返回上次编辑的地方
+21.ctrl+k,ctrl+o:打开文件夹

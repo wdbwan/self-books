@@ -1,0 +1,35 @@
+															shiro认证授权流程
+															
+一、认证授权流程概括
+										
+1.流程：
+     
+	project code --> subject --> securityManager --> realm
+	
+	
+2.解释：
+
+    subject:是一个接口，代表当前用户，
+	securityManager:也是一个接口，管理者所有subject,是shiro的核心，一切与安全有关的操作都与securityManager有关。
+					securityManager相当于springmvc中的dispatcherServlet，控制着一切行为，如认证授权、会话、缓存。
+	realm:安全数据源，获取安全数据如角色、资源、权限等，securityManager需要从realm获取角色、权限等进行认证授权操作
+	
+    	
+二、认证流程
+
+    1.流程：
+		构建securityManager环境 --> subject.login --> securityManager.login() --> authenticator --> realm
+		
+    2.解释：
+		securityManager ：创建令牌token，为验证提供账户和密码信息
+		subject.login:实际调用securityManager.login
+					  SecurityManager接受到token（令牌）信息后委托Authenticator实例进行认证；
+					  Authenticator通过实现类ModularRealmAuthenticator来调用anthenticator.authenticate(token)方法；
+					  
+
+三、授权流程
+
+	1.流程：
+	    构建securityManager环境 --> subject.isPermitted --> securityManager.isPermitted --> authorize --> realm 
+    					  
+ 										
